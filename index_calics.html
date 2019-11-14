@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="bootstrap.min.css">
+<style>
+h2{
+margin-left:15px;
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="calics_icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Agenda ICS
+  </a>
+</nav>
+
+<div class="jumbotron">
+  <h1 class="display-4">Gestion des agendas au format ICS dans Jeedom</h1>
+  <p class="lead">- Compatible Google Agenda, Calendrier Outlook, Calendrier Apple, tout calendrier ICS<br>
+  - Permet d'exécuter des actions en fonction des évènements</p>
+</div>
+
+<div class="container">
+	<h1>1 - Configuration du plugin Agenda ICS</h1>
+	<p>
+		Une fois l'installation du plugin terminé, vous devez l'activer.<br>
+		<img src="img/configuration.png">
+	</p>
+	<h1>2 - Ajouter un agenda</h1>
+	<p>
+		Le plugin se trouve dans la rubrique <b>Plugins -> Organisation -> Agenda ICS</b><br>
+		Cliquer sur <img src="img/ajouter.png"><br>
+		
+		
+	</p>
+
+	<h1>3 - Paramétrages</h1>
+	<p>
+		<div class="row">
+			<div class="col">
+			<b>Adresse du calendrier ICS:</b> Adresse du fichier ICS qui sera utilisé pour récupérer les évènements ( voir 5 - Récupérer l'adresse d'un fichier ICS)<br>
+			<b>Personnalisation du Widget:</b> Vous permet de personaliser l'apparence du widget dans le mode Design
+			</div>
+			<div class="col">
+				<img src="img/parametres.png" width="600px"><br>
+			</div>
+		</div>	
+	</p>
+	<h1>4 - Gestion des actions sur les évènements</h1>
+	<h2>a - Principe</h2>
+	
+	<h2>b - Ajouter/modifier/Supprimer</h2>
+	<p>
+		Cliquer sur l'onglet "Actions"
+	</p>	
+	<div class="row">
+		<div class="col">
+			<img src="img/actions.png" width="600px"><br>
+		</div>
+		<div class="col">
+		<b>Ajouter une action:</b> Permet d'ajouter une action liée à un évènement<br>
+		<b>Supprimer cette action:</b> Permet de supprimer l'action<br>
+		<b>Action au début de l'évènement:</b> Permet d'ajouter une ou plusieurs actions à exécuter au début de l'évènement<br>
+		<b>Action à la fin de l'évènement:</b> Permet d'ajouter une ou plusieurs actions à exécuter à la fin de l'évènement<br>
+		<b>Nom:</b> Nom de l'acton : Elle doit correspondre au titre d'un évènement dans votre Agenda<br>
+		<b>Couleur du fond:</b> Couleur du fond de l'évènement (pour affichage dans le widget)<br>
+		<b>Couleur du texte:</b> Couleur du texte de l'évènement (pour affichage dans le widget)<br>
+		</div>
+		
+	</div>	
+	<h1>5 - Récupérer l'adresse d'un fichier ICS</h1>
+	<p>
+	<h2>a - Google Agenda</h2>
+		<ul >
+			<li>Se rendre dans les paramètres de votre agenda</li>
+			<li>Section "Autorisatons d'accès"</li>
+			<li>Partie "Adresse privée au format iCal"</li>
+			<li>Récupérer le lien https://calendar.google.com/calendar/ical/.........ics</li>
+		</ul>
+		<img src="img/googleagenda.png"><br>
+	<h2>b - Calendrier Outlook</h2>
+
+	</p>
+</div>
+
+
+
+<script src="jquery-3.0.0.min.js"></script>
+<script src="popper.min.js"</script>
+<script src="bootstrap.min.js"></script>
+</body>
+</html>
